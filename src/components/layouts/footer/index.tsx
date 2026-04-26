@@ -1,16 +1,8 @@
-import {
-  FaFacebook,
-  FaFacebookF,
-  FaInstagram,
-  FaLinkedin,
-  FaRegStar,
-  FaStar,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 //import react icons
 import { FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
-import { IoShieldCheckmarkOutline } from "react-icons/io5";
 
 //import payment gateway icons
 import viva from "../..//../assets/footer/paymentgateway icons/Grupo 163651 1.svg";
@@ -33,7 +25,6 @@ import shieldIcon from "../../../assets/footer/sheild.svg";
 
 //import style here
 import style from "./footer.module.css";
-import { IoIosStarOutline } from "react-icons/io";
 
 function Footer() {
   return (
