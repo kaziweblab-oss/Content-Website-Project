@@ -44,21 +44,31 @@
 }
 
 .icon,
-.searchicon {
+.searchicon,
+.dollarIcon {
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
+}
+
+.dollarIcon {
+  display: none;
 }
 
 @media screen and (min-width: 720px) {
   .logoSection {
     width: 30%;
   }
+
   .searchicon {
     z-index: 2;
     background-color: #b2b8c2;
     color: #1e1e1e;
     font-size: 1rem;
+  }
+
+  .dollarIcon {
+    display: block;
   }
   .hambargurMenu {
     display: none;
