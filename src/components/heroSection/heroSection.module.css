@@ -69,11 +69,23 @@
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.2);
 }
 
 .iconSection a:nth-child(3) img {
+  box-sizing: border-box;
+  margin-top: 0.2rem;
   width: 0.2rem;
   height: 1.5rem;
+}
+
+.iconSection a:nth-child(3) img:hover {
+  transform: scale(1);
+  cursor: default;
 }
 
 .heroTextSection {
