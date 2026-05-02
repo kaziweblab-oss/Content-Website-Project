@@ -1,0 +1,57 @@
+.reviewCard {
+  width: 30rem;
+  background: linear-gradient(to bottom, #18c5e1 0%, #8666ef 47%, #fb01ff 100%);
+  box-sizing: border-box;
+  padding: 0.1rem;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  transform: scale(0.98);
+}
+
+.reviewCard:hover {
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1rem;
+  gap: 0.5rem;
+  border-radius: 10px;
+}
+
+.ratingSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.reviewerName {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.reviewerPic {
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.starSection {
+  display: flex;
+  gap: 0.2rem;
+}
+
+.reviewerMessage {
+  width: 100%;
+  white-space: normal;
+  color: rgb(255, 255, 255, 60%);
+  font-size: 1.3rem;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

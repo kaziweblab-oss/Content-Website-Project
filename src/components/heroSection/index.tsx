@@ -13,7 +13,6 @@ import xboxIcon from "../../assets/home/hero/logo/g4146.png";
 import stickIcon from "../../assets/home/hero/logo/Retângulo 150200.png";
 import keyLogo from "../../assets/home/hero/logo/União 126.png";
 import profileIcone from "../../assets/home/hero/logo/path0.png";
-
 import { LiaCartPlusSolid } from "react-icons/lia";
 
 //import style here
@@ -24,7 +23,6 @@ import Star from "../star";
 function HeroSection() {
   const [phoneView, setPhoneView] = useState(false);
   const handelResize = () => {
-    console.log("resize");
     const currentWidth = window.innerWidth;
     if (currentWidth <= 720) {
       setPhoneView(true);

@@ -25,6 +25,7 @@
   color: white;
   font-size: 2rem;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 
 .iconSection {
@@ -40,6 +41,7 @@
   display: none;
   z-index: 1;
 }
+
 .searchbox:focus {
   outline: none;
 }
@@ -50,6 +52,15 @@
   font-size: 1.5rem;
   color: white;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hambargurMenu:hover,
+.icon:hover,
+.searchicon:hover,
+.dollarIcon:hover {
+  transform: scale(1.2);
+  color: #b2b8c2;
 }
 
 .dollarIcon {
@@ -71,23 +82,41 @@
   .dollarIcon {
     display: block;
   }
+
+  .icon,
+  .dollarIcon {
+    font-size: 2rem;
+  }
+
   .hambargurMenu {
     display: none;
   }
+
   .iconSection {
     width: 70%;
     padding-left: 30%;
   }
+
   .searchbox {
     display: block;
     position: absolute;
     background-color: #b2b8c2;
     border: none;
     border-radius: 0.3rem;
-    height: 1.5rem;
+    height: 1.7rem;
     padding: 0.2rem;
     width: 50%;
     left: 0;
+  }
+
+  .searchicon {
+    font-size: 1.5rem;
+    margin-left: 1%;
+  }
+
+  .searchicon:hover {
+    transform: none;
+    color: #1e1e1e;
   }
 }
 

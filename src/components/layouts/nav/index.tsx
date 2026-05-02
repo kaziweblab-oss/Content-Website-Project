@@ -23,7 +23,7 @@ function Nav() {
           <div className={style.iconSection}>
             <input type="text" className={style.searchbox} />
             <IoSearch className={style.searchicon} />
-            <AiOutlineDollarCircle className={style.dollarIcon}/>
+            <AiOutlineDollarCircle className={style.dollarIcon} />
             <FaRegHeart className={style.icon} />
             <HiOutlineShoppingBag className={style.icon} />
             <CgProfile className={style.icon} />
