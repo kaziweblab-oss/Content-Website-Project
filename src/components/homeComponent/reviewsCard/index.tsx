@@ -1,5 +1,5 @@
 //import star icon here
-import Star from "../star";
+import Star from "../../star";
 
 //makeing interface here
 interface ReviewData {

@@ -1,24 +1,24 @@
 //import image here
-import heropic from "../../assets/home/hero/image/hero.jpg";
-import heroPicPhone from "../../assets/home/hero/image/DS_wide-2560x1440-c3d7bbf8ee36dd025610088381a5235a 3.jpg";
-import pic1 from "../../assets/home/hero/image/damian_lynn_-_truth_be_told 1.jpg";
-import pic2 from "../../assets/home/hero/image/damian_lynn_-_truth_be_told-1.jpg";
-import pic3 from "../../assets/home/hero/image/damian_lynn_-_truth_be_told-2.jpg";
-import pic4 from "../../assets/home/hero/image/damian_lynn_-_truth_be_told-3.jpg";
-import pic5 from "../../assets/home/hero/image/damian_lynn_-_truth_be_told-4.jpg";
+import heropic from "../../../assets/home/hero/image/hero.jpg";
+import heroPicPhone from "../../../assets/home/hero/image/DS_wide-2560x1440-c3d7bbf8ee36dd025610088381a5235a 3.jpg";
+import pic1 from "../../../assets/home/hero/image/damian_lynn_-_truth_be_told 1.jpg";
+import pic2 from "../../../assets/home/hero/image/damian_lynn_-_truth_be_told-1.jpg";
+import pic3 from "../../../assets/home/hero/image/damian_lynn_-_truth_be_told-2.jpg";
+import pic4 from "../../../assets/home/hero/image/damian_lynn_-_truth_be_told-3.jpg";
+import pic5 from "../../../assets/home/hero/image/damian_lynn_-_truth_be_told-4.jpg";
 
 //import icons here
-import path1 from "../../assets/home/hero/logo/path-1.png";
-import xboxIcon from "../../assets/home/hero/logo/g4146.png";
-import stickIcon from "../../assets/home/hero/logo/Retângulo 150200.png";
-import keyLogo from "../../assets/home/hero/logo/União 126.png";
-import profileIcone from "../../assets/home/hero/logo/path0.png";
+import path1 from "../../../assets/home/hero/logo/path-1.png";
+import xboxIcon from "../../../assets/home/hero/logo/g4146.png";
+import stickIcon from "../../../assets/home/hero/logo/Retângulo 150200.png";
+import keyLogo from "../../../assets/home/hero/logo/União 126.png";
+import profileIcone from "../../../assets/home/hero/logo/path0.png";
 import { LiaCartPlusSolid } from "react-icons/lia";
 
 //import style here
 import style from "./heroSection.module.css";
 import { useEffect, useState } from "react";
-import Star from "../star";
+import Star from "../../star";
 
 function HeroSection() {
   const [phoneView, setPhoneView] = useState(false);

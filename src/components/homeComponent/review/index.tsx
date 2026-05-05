@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import ReviewsCard from "../reviewsCard";
 
 //import icon here
-import Star from "../star";
+import Star from "../../star";
 
 //import style here
 import style from "./reviews.module.css";

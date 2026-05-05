@@ -4,8 +4,9 @@ import { Helmet } from "react-helmet-async";
 import logo from "../../../assets/home/logo/icon.svg";
 
 //import Sections here
-import HeroSection from "../../heroSection";
-import ReviewSection from "../../review";
+import HeroSection from "../../homeComponent/heroSection";
+import ReviewSection from "../../homeComponent/review";
+import WeeklyDeals from "../../homeComponent/weeklySection";
 function HomePage() {
   return (
     <>
@@ -15,6 +16,7 @@ function HomePage() {
       </Helmet>
       <HeroSection />
       <ReviewSection />
+      <WeeklyDeals />
     </>
   );
 }
