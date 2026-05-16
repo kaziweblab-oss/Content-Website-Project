@@ -1,0 +1,25 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.3rem;
+  background: linear-gradient(to bottom left, #fc00ff, #00dbde);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.cartIcon {
+  background-color: transparent;
+  color: white;
+  font-weight: bolder;
+  font-size: 2rem;
+}

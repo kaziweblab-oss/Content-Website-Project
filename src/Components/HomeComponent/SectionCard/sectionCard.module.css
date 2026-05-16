@@ -1,0 +1,177 @@
+.section1 {
+  box-sizing: border-box;
+  padding: 0.1rem;
+  background: linear-gradient(to bottom, #18c5e1 0%, #8666ef 47%, #fb01ff 100%);
+  border-radius: 0.5rem;
+  margin: 10rem 1rem;
+}
+
+.section2,
+.miniCard {
+  padding: 1rem;
+  margin: 5rem 1rem 0 1rem;
+}
+
+.containeer {
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3.3%;
+}
+
+.headTitle {
+  width: 30%;
+  font-size: 1.2rem;
+  color: #ffff;
+}
+
+.leftBtn,
+.rightBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.hr {
+  width: 60%;
+  height: 0.09rem;
+  background: linear-gradient(
+    to left,
+    #15181d 0%,
+    #fc00ff 21%,
+    #00dbde 78%,
+    #15181d 95%
+  );
+}
+
+.time {
+  display: none;
+  align-items: center;
+}
+
+.time span {
+  background: linear-gradient(to left bottom, #fc00ff 1%, #00dbde 100%);
+  box-sizing: border-box;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  font-size: 0.8rem;
+  color: #ffff;
+  border-radius: 0.5rem;
+  border-color: #ffff;
+  padding: 0.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 2px 2px 5px rgb(53, 59, 78);
+}
+
+.bodyContaineer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.moveArrow {
+  display: none;
+  color: #ffff;
+  font-size: 10rem;
+  transition: 0.3s ease-in-out;
+}
+.moveArrow:hover {
+  color: rgb(255, 255, 255, 0.5);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.body {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 1rem;
+  justify-content: space-around;
+}
+
+.miniCardSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 3rem 0 0 0;
+}
+
+.miniCardTitle {
+  font-size: 1rem;
+  color: white;
+}
+
+@media screen and (min-width: 720px) {
+  .time {
+    display: flex;
+    margin-left: 10%;
+    color: #ffffff;
+    gap: 0.5rem;
+  }
+
+  .rightBtn {
+    flex-direction: row-reverse;
+  }
+
+  .headTitle {
+    width: 10rem;
+  }
+
+  .body {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    justify-content: flex-start;
+  }
+
+  .moveArrow {
+    display: block;
+  }
+
+  .leftBtn {
+    width: 84%;
+  }
+
+  .leftBtn .hr {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .miniCard .hr{
+    display: none;
+  }
+
+  .miniCard .leftBtn{
+    justify-content: flex-end;
+  }
+  
+}
