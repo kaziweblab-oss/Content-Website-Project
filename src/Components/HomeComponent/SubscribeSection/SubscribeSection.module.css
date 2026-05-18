@@ -56,7 +56,7 @@
 }
 
 .subscribeSection Input {
-  width: 75%;
+  width: 70%;
   padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
@@ -65,10 +65,9 @@
   font-size: 1.2rem;
 }
 
-.subscribeSection Button {
-  width: 20%;
+.subscribeSection button {
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   border: none;
   outline: none;
@@ -80,8 +79,31 @@
   transition: 0.3s ease-in-out;
 }
 
-.subscribeSection Button:hover {
+.subscribeSection button:hover {
   background: linear-gradient(to left, #00dbde 1%, #fc00ff 100%);
   transform: scale(1.05);
   box-shadow: 0 0 5px rgba(252, 0, 255, 0.5);
+}
+
+@media screen and (min-width:1024px) {
+  .subscribeSectionContainer{
+    flex-direction: row;
+  }
+
+  .subscribeSectionHeader{
+    width: 50%;
+  }
+
+  .subscribeSectionForm{
+    width: 50%;
+  }
+
+  .subscribeSection Input{
+    width: 70%;
+  }
+
+  .subscribeSection button{
+    width: 30%;
+  }
+  
 }
