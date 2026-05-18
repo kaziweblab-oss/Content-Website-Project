@@ -1,6 +1,5 @@
 //import style here
 import { GoClockFill } from "react-icons/go";
-import Btn from "../../Btn";
 import style from "./miniCard.module.css";
 
 //create interface here
