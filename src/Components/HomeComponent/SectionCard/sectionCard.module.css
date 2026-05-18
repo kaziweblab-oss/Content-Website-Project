@@ -96,7 +96,16 @@
   font-size: 10rem;
   transition: 0.3s ease-in-out;
 }
-.moveArrow:hover {
+
+.moveArrowBlog {
+  display: none;
+  color: #ffff;
+  font-size: 2.5rem;
+  transition: 0.3s ease-in-out;
+}
+
+.moveArrow:hover,
+.moveArrowBlog:hover {
   color: rgb(255, 255, 255, 0.5);
   cursor: pointer;
   transform: scale(1.1);
@@ -156,6 +165,10 @@
     display: block;
   }
 
+  .moveArrowBlog {
+    display: block;
+  }
+
   .leftBtn {
     width: 84%;
   }
@@ -165,13 +178,12 @@
   }
 }
 
-@media screen and (min-width:1024px) {
-  .miniCard .hr{
+@media screen and (min-width: 1024px) {
+  .miniCard .hr {
     display: none;
   }
 
-  .miniCard .leftBtn{
+  .miniCard .leftBtn {
     justify-content: flex-end;
   }
-  
 }

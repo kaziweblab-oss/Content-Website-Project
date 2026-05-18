@@ -1,4 +1,6 @@
 //import style here
+import { GoClockFill } from "react-icons/go";
+import Btn from "../../Btn";
 import style from "./miniCard.module.css";
 
 //create interface here
@@ -9,6 +11,8 @@ interface miniCardProps {
   save: number;
   offer: number;
   startsAt: number | false;
+  releaseDate: false | string;
+  readTime: false | number;
 }
 
 function MiniCard({
@@ -18,10 +22,14 @@ function MiniCard({
   save,
   offer,
   startsAt,
+  releaseDate,
+  readTime,
 }: miniCardProps) {
   return (
     <>
-      <article className={style.cardSection}>
+      <article
+        className={`${prize ? style.cardSection : style.miniCardWithoutPrize}`}
+      >
         <img src={img} alt={cardTitle + " Image"} className={style.cardImage} />
         <div className={style.containeer}>
           <p className={style.title}>{cardTitle}</p>
@@ -48,6 +56,21 @@ function MiniCard({
                 </div>
               </>
             )}
+            <div className={`${readTime && releaseDate && style.timeSection}`}>
+              {releaseDate && (
+                <div className={style.releaseDate}>
+                  <p>{releaseDate}</p>
+                </div>
+              )}
+              {readTime && (
+                <div className={style.readTime}>
+                  <p>
+                    <GoClockFill className={style.clockIcon} />
+                  </p>
+                  <p>{readTime} min read</p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         {prize && (

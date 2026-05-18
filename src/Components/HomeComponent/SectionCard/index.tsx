@@ -20,7 +20,6 @@ interface sectionCardProps {
   icon: 5 | 3 | false;
   releaseDate: false | string;
   readTime: false | number;
-  views: false | number;
   border: boolean;
   miniCardImage1: string | false;
   miniCardImage2: string | false;
@@ -55,6 +54,8 @@ function SectionCard({
   miniCard5Title,
   prize,
   startsAt,
+  readTime,
+  releaseDate,
 }: sectionCardProps) {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const [width, useWidth] = useState(Number);
@@ -210,7 +211,7 @@ function SectionCard({
               <div className={style.bodyContaineer}>
                 {moveArrow && (
                   <IoIosArrowDropleft
-                    className={style.moveArrow}
+                    className={`${sectionTitle === "Blog Articles" ? style.moveArrowBlog : style.moveArrow}`}
                     onClick={handelLeftArrowClick}
                   />
                 )}
@@ -223,6 +224,8 @@ function SectionCard({
                       save={25}
                       offer={70}
                       startsAt={startsAt}
+                      readTime={readTime}
+                      releaseDate={releaseDate}
                     />
                   )}
                   {miniCardImage2 && miniCard2Title && (
@@ -233,6 +236,8 @@ function SectionCard({
                       save={25}
                       offer={70}
                       startsAt={startsAt}
+                      readTime={readTime}
+                      releaseDate={releaseDate}
                     />
                   )}
                   {miniCardImage3 && miniCard3Title && (
@@ -243,6 +248,8 @@ function SectionCard({
                       save={25}
                       offer={70}
                       startsAt={startsAt}
+                      readTime={readTime}
+                      releaseDate={releaseDate}
                     />
                   )}{" "}
                   {miniCardImage4 && miniCard4Title && (
@@ -253,6 +260,8 @@ function SectionCard({
                       save={25}
                       offer={70}
                       startsAt={startsAt}
+                      readTime={readTime}
+                      releaseDate={releaseDate}
                     />
                   )}
                   {miniCardImage5 && miniCard5Title && (
@@ -263,12 +272,14 @@ function SectionCard({
                       save={25}
                       offer={70}
                       startsAt={startsAt}
+                      readTime={readTime}
+                      releaseDate={releaseDate}
                     />
                   )}
                 </div>
                 {moveArrow && (
                   <IoIosArrowDropright
-                    className={style.moveArrow}
+                    className={`${sectionTitle === "Blog Articles" ? style.moveArrowBlog : style.moveArrow}`}
                     onClick={handelRightArrowClick}
                   />
                 )}

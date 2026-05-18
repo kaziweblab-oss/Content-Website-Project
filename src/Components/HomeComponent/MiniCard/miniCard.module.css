@@ -12,7 +12,22 @@
   transition: 0.3s ease-in-out;
 }
 
-.cardSection:hover {
+.miniCardWithoutPrize {
+  background-color: #1e2127;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+  gap: 1rem;
+  transform: scale(0.95);
+  transition: 0.3s ease-in-out;
+}
+
+.cardSection:hover,
+.miniCardWithoutPrize:hover {
   cursor: pointer;
   transform: scale(1);
   box-shadow: 0 0 5px rgb(46, 44, 44);
@@ -36,6 +51,8 @@
   background-color: #1e2127;
   color: #ffff;
   font-size: 1.5rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
 }
 
 .offerBody {
@@ -102,4 +119,56 @@
   border-radius: 0.5rem;
   border-color: #2bb6e4;
   color: #2bb6e4;
+}
+
+.timeSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e2127;
+  gap: 0.5rem;
+}
+
+.timeSection p {
+  background-color: #1e2127;
+  font-size: 1.3rem;
+}
+
+.releaseDate {
+  background-color: #1e2127;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: #e614fc;
+}
+
+.releaseDate p {
+  font-size: 1.3rem;
+}
+
+.readTime {
+  display: flex;
+  background-color: #1e2127;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.readTime p {
+  font-size: 1.3rem;
+}
+
+.readTime p:nth-child(2) {
+  color: #ffffff;
+}
+
+.clockIcon {
+  display: flex;
+  background-color: #1e2127;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 0.1rem;
+  width: 1rem;
+  height: 1rem;
+  align-items: center;
+  justify-content: center;
 }

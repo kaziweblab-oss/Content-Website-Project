@@ -1,0 +1,87 @@
+.subscribeSection {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0.2px;
+  background: linear-gradient(
+    to left bottom,
+    #18c5e1 0%,
+    #8666ef 47%,
+    #fb01ff 100%
+  );
+  margin: 0 auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(37, 12, 180, 0.815);
+}
+
+.subscribeSectionContainer {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  flex-direction: column;
+  margin: 0.1rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.sendMailIcon {
+  transform: rotateZ(-45deg);
+  font-size: 2.5rem;
+}
+
+.subscribeSectionHeader {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.subscribeSectionHeaderIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribeSectionForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.subscribeSection Input {
+  width: 75%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  font-size: 1.2rem;
+}
+
+.subscribeSection Button {
+  width: 20%;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  height: 2.8rem;
+  background: linear-gradient(to left, #fc00ff 1%, #00dbde 100%);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.subscribeSection Button:hover {
+  background: linear-gradient(to left, #00dbde 1%, #fc00ff 100%);
+  transform: scale(1.05);
+  box-shadow: 0 0 5px rgba(252, 0, 255, 0.5);
+}

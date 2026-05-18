@@ -36,6 +36,7 @@ import autoDeskIcon from "../../../Assets/Home/MiniCard/block_-1.svg";
 import maya2024Icon from "../../../Assets/Home/MiniCard/block_-2.svg";
 import aliadAutoStudioIcon from "../../../Assets/Home/MiniCard/block_-3.png";
 import _3DsMax2024Icon from "../../../Assets/Home/MiniCard/block_-4.png";
+import SubscriptionSection from "../../HomeComponent/SubscribeSection";
 
 function HomePage() {
   return (
@@ -62,7 +63,6 @@ function HomePage() {
         icon={5}
         releaseDate={false}
         readTime={false}
-        views={false}
         border={true}
         prize={false}
         startsAt={false}
@@ -93,7 +93,6 @@ function HomePage() {
         icon={5}
         releaseDate={false}
         readTime={false}
-        views={false}
         border={false}
         prize={false}
         startsAt={false}
@@ -124,7 +123,6 @@ function HomePage() {
         icon={5}
         releaseDate={false}
         readTime={false}
-        views={false}
         border={false}
         prize={false}
         startsAt={false}
@@ -154,7 +152,6 @@ function HomePage() {
           icon={false}
           releaseDate={false}
           readTime={false}
-          views={false}
           border={false}
           prize={5999}
           startsAt={false}
@@ -181,7 +178,6 @@ function HomePage() {
           icon={false}
           releaseDate={false}
           readTime={false}
-          views={false}
           border={false}
           prize={false}
           startsAt={999}
@@ -208,7 +204,6 @@ function HomePage() {
           icon={false}
           releaseDate={false}
           readTime={false}
-          views={false}
           border={false}
           prize={5999}
           startsAt={false}
@@ -227,6 +222,37 @@ function HomePage() {
       </div>
 
       {/* Mini Card Section Ends Here */}
+
+      {/* Blog Article Page Section Starts Here */}
+      <SectionCard
+        type="miniCard"
+        sectionTitle="Blog Articles"
+        time={false}
+        btn="right"
+        moveArrow={true}
+        icon={false}
+        releaseDate="19 Sep, 23"
+        readTime={3}
+        border={false}
+        prize={false}
+        startsAt={false}
+        miniCardImage1={specialOfferCardImage3}
+        miniCardImage2={specialOfferCardImage2}
+        miniCardImage3={false}
+        miniCardImage4={false}
+        miniCardImage5={false}
+        miniCard1Title="Game Keys The Best Websites for Affordale Gaming Deals"
+        miniCard2Title="Game Keys The Best Websites for Affordale Gaming Deals"
+        miniCard3Title={false}
+        miniCard4Title={false}
+        miniCard5Title={false}
+      />
+
+      {/* Blog Article Page Section Ends Here */}
+
+      {/* Subscription Section Starts Here */}
+      <SubscriptionSection />
+      {/* Subscription Section Ends Here */}
     </>
   );
 }
