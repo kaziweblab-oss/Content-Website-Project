@@ -13,7 +13,7 @@ function SubscriptionSection() {
             <div className={style.subscribeSectionHeaderIcon}>
               <RiMailSendLine className={style.sendMailIcon} />
             </div>
-            <div>
+            <div className={style.subscribeSectionHeaderText}>
               <p>Subscribe to our Newsletter</p>
               <p>Stay tuned! Recive News and Discounts</p>
             </div>
