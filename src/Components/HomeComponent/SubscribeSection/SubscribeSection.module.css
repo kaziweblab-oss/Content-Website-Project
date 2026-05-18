@@ -19,7 +19,7 @@
 .subscribeSectionContainer {
   display: flex;
   width: 100%;
-  gap: 1rem;
+  gap: 2rem;
   flex-direction: column;
   margin: 0.1rem;
   box-sizing: border-box;
